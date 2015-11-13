@@ -1,0 +1,36 @@
+<ion-view view-title="Account">
+
+    <ion-content class="padding">
+
+
+      <div class="item item-avatar">
+        <img src="{{user.avatarurl}}">
+        <h2>{{user.name}}</h2>
+        <p>{{user.age}}</p>
+      </div>
+
+      <div class="item item-body">
+        <canvas id="line"  class="chart chart-line" chart-data="data"
+          chart-labels="labels" chart-legend="true" chart-series="series"
+          chart-click="onClick" >
+        </canvas>
+      </div>
+
+      <div class="item tabs tabs-secondary tabs-icon-left">
+        <a class="tab-item" href="#">
+          <i class="icon ion-thumbsup"></i>
+          Like
+        </a>
+        <a class="tab-item" href="#">
+          <i class="icon ion-chatbox"></i>
+          Comment
+        </a>
+        <a class="tab-item" href="#">
+          <i class="icon ion-share"></i>
+          Share
+        </a>
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>
